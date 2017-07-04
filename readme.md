@@ -17,7 +17,13 @@
   ```bash
   git reflog
   ```
-  Este comando mostró una lista de **commits** por donde hemos pasado, de esa lista pudimos identificar que el **commit** con hash **54c4107** era el que estabamos buscando.    
+  Este comando mostró una lista de **commits** por donde hemos pasado, de esa lista pudimos identificar que el **commit** con hash **54c4107** era el que estabamos buscando.
+
+  Luego utilizamos el comando:
+
+  ```bash
+  git reset --hard <commit>
+  ```
 
 - **El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?**
 
@@ -34,7 +40,7 @@
   git graph
   ```
 - **El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?**
-  No, ya que el archivo **git-nuestro.md** no tuvo modificaciones desde el commit en común con la rama **title**.  
+  Si, ya que el archivo **git-nuestro.md** no tuvo modificaciones desde el commit en común con la rama **title**.  
 - **¿Qué comando o comandos utilizaste en el paso 27?**
   ```bash
     git reset HEAD~1
